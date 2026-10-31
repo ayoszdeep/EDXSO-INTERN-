@@ -81,5 +81,6 @@ copy .env.example .env          # optional: add OPENAI_API_KEY / SMTP settings
 python -m src.main              # full pipeline (about 8 minutes on the first run)
 python -m src.main --discover   # or a single stage: --collect --filter --enrich
                                 #   --personalize --validate --review --outreach --export
+streamlit run src/dashboard.py  # simple web dashboard: results, message review, tracker
 pytest -v                       # 33 offline tests
 ```
