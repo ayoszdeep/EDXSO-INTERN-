@@ -1,0 +1,22 @@
+================================================================
+  DevFlow AI - Developer Micro-Influencer Outreach
+================================================================
+  Discovered channels             200
+  Profiles collected              200
+  In follower range               55
+  Qualified                       29
+  Needs review                    0
+  Not qualified                   171
+  Shortlist with valid email      9
+  Shortlist with instagram        8
+  Messages generated              29
+  Messages valid                  29
+  Outreach:
+    email:Simulated                         9
+    email:Skipped                           20
+    instagram_dm:Ready for Manual Send      8
+    instagram_dm:Skipped                    21
+================================================================
+  Outputs: data/raw, data/processed, data/exports
+================================================================
+

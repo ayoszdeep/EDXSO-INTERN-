@@ -1,7 +1,7 @@
 {
   "campaign_id": "DEVFLOW_AI_Q4_2026",
   "campaign_name": "DevFlow AI - Developer Micro-Influencer Outreach",
-  "generated_at": "2026-10-31T19:10:33.537913+00:00",
+  "generated_at": "2026-10-31T19:34:03.652363+00:00",
   "discovered_channels": 200,
   "profiles_collected": 200,
   "in_follower_range": 55,
@@ -27,6 +27,6 @@
     "dms_skipped": 21,
     "duplicates_prevented": 17,
     "mode": "simulation",
-    "run_at": "2026-10-31T19:10:33.477409+00:00"
+    "run_at": "2026-10-31T19:30:18.477756+00:00"
   }
 }

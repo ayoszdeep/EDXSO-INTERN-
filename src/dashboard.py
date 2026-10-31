@@ -10,6 +10,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+import altair as alt
 import pandas as pd
 import streamlit as st
 
@@ -62,7 +63,13 @@ with overview:
         for part in r["qualification_reason"].split("; "):
             key = part.split(":")[0].split(" (")[0]
             reasons[key] = reasons.get(key, 0) + 1
-    st.bar_chart(pd.Series(reasons, name="channels").sort_values(ascending=False))
+    chart_df = pd.DataFrame({"reason": list(reasons), "channels": list(reasons.values())})
+    st.altair_chart(
+        alt.Chart(chart_df).mark_bar().encode(
+            x=alt.X("channels:Q", scale=alt.Scale(domainMin=0), title="channels"),
+            y=alt.Y("reason:N", sort="-x", title=None, axis=alt.Axis(labelLimit=420)),
+            tooltip=["reason", "channels"]),
+        width="stretch")
 
 # ------------------------------------------------------------------ influencers
 with explorer:
